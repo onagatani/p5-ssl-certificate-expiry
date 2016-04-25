@@ -48,6 +48,8 @@ sub checker {
 
     my $limit_days = $dur->in_units('days');
 
+    print $limit_days;
+
     if ($limit_days < $days) {
         alert($limit_days);
     }
