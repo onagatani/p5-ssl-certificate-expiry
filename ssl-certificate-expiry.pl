@@ -22,7 +22,7 @@ GetOptions(
 
 my $subject = "$host is ssl certificate expiry";
 
-pod2usage() if !$host || !$days || !$to || !$from;
+pod2usage() unless $host;
 
 checker();
 
