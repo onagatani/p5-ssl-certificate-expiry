@@ -50,7 +50,7 @@ sub checker {
 
     print STDOUT $limit_days . "\n";
 
-    if ($limit_days < $days) {
+    if ( $days && ( $limit_days < $days )) {
         alert($limit_days);
     }
 }
